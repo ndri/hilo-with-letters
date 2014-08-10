@@ -20,7 +20,7 @@ def numerize(word):
 
 # Try to get word from the wordlist, otherwise choose a random combination
 try:
-    with open('/usr/share/dict/words') as f:
+    with open(wordlist) as f:
         words = f.read().decode('utf-8').splitlines()
     # Make sure every word is a legal word according to the alphabet
     words = filter(lambda word: not any(letter not in alphabet for letter in word), words)
