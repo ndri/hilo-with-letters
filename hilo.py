@@ -56,5 +56,5 @@ while 1:
     except ValueError:
         print "Try again."
     except KeyboardInterrupt:
-        print "\nGood bye."
+        print "\nGood bye. The word was {0}.".format(secret)
         break
